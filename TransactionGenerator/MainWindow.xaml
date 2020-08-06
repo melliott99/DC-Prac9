@@ -1,0 +1,20 @@
+﻿<Window x:Class="TransactionGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransactionGenerator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="JobCount" HorizontalAlignment="Left" Height="20" Margin="382,60,0,0" TextWrapping="NoWrap" Text="Jobs" VerticalAlignment="Top" Width="30"/>
+        <TextBox Name="CodeBox" HorizontalAlignment="Left" Height="300" Margin="35,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
+        <TextBox Name="CodeTextBox" HorizontalAlignment="Left" Height="20" Margin="35,60,0,0" TextWrapping="NoWrap" Text="Enter Code Below" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="SubmitCode" Content="Submit" HorizontalAlignment="Left" Margin="155,60,0,0" VerticalAlignment="Top" Width="80" Height="20" Click="SubmitCode_Click" Grid.Column="1"/>
+        <TextBox Name="PortBox" HorizontalAlignment="Left" Height="20" Margin="670,15,0,0" TextWrapping="NoWrap" Text="Port: " VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="AnswerBox" HorizontalAlignment="Left" Height="300" Margin="550,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
+        <ListBox Height="300" Width="180" Margin="310,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Name="JobBoard"></ListBox>
+        
+
+    </Grid>
+</Window>
